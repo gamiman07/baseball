@@ -57,13 +57,13 @@ const Game = () => {
         // 정답 체크
         if (answerNumber.join() === newNumber.join()) {
           setTimeout(() => {
-            alert("승리!!!");
+            alert("승리!!! 마지막 코드는 7 입니다");
             init();
           }, 1000);
         } else if (newNumberList.length === 9) {
           // 실패 체크
           setTimeout(() => {
-            alert("실패!!!");
+            alert("실패!!! 다시 도전하세요!!!");
             init();
           }, 1000);
         }
